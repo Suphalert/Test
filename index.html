@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>RMUTK CS-IT</title>
+
+    <style>
+        nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 15px 10px;
+            gap: 30px;
+            border-radius: 50px;
+            background-color: white;
+            position: relative;
+            width: 100%;
+            max-width: 500px; /* กำหนดความกว้างสูงสุดของ nav */
+            margin: 20px auto; /* จัดกึ่งกลางทั้งแนวนอนและแนวตั้ง */
+        }
+        nav a {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            position: relative;
+            color:black;
+            
+        }
+        nav a::after {
+            content:'';
+            position: absolute;
+            width: 0%;
+            height: 8px;
+            opacity: 1;
+            background-image: linear-gradient(to right,#7EAA92,#C8E4B2) ;
+            bottom: -7px;
+            left:50%;
+            transform: translateX(-50%);
+            border-radius: 25px;
+            transition: .4s;
+        }
+        nav a:hover::after {
+            width: 50px;
+            opacity: 1;
+        }
+        body {
+            background-color: #7EAA92;
+        }
+        .main-container {
+            flex: 1;
+            width: 150;
+            
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+
+            background-color: #ffffff;
+            
+            
+        }
+        .main-a {
+            background-color: #7EAA92;
+            font-size: 30px;
+            font-weight:bolder;
+        }
+        .main-b {
+            background-color: #C8E4B2;
+            font-size: 25px;
+             
+        }
+        li {
+            padding: 0;
+            margin: 1%;
+            font-size: 19px;
+            text-align: left;
+        }
+        p {
+            padding: 0;
+            margin: 1%;
+            font-size: 19px;
+            text-align: left;
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 350px;
+            top: 0px;
+            transform: translateX(-50%);
+            object-fit: cover;
+            object-position: center;
+        }
+        header {
+            text-align: center; 
+            padding-bottom: 270px; 
+        }
+        @media screen and (min-width: 414px) and(max-width:1250) {
+            nav {
+            display: block; 
+            width: 100%; 
+            padding: 10px 0; 
+            text-align: center; 
+            }
+            nav a {
+            width: auto; 
+            margin: 5px; 
+            }
+            header {
+                padding-bottom: 180px; 
+            }
+            img {
+                height: 250px;
+            }
+            .main-container {
+                width: 90%; 
+                padding: 10px; 
+            }
+            .main-a {
+                font-size: 12px;
+                width: auto;
+            }
+            .main-b {
+                font-size: 12;
+            }
+            li, p, i {
+                font-size: 12px; 
+            }    
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header>
+        <img src="./img/utk/UTK.jpg" alt="มหาวิทยาลัย" width="100">
+        <nav>
+            <a href="index.html">หน้าหลัก</a>
+            <a href="study.html">เเผนการเรียน</a>
+            <a href="lecturers.html">บุคลากร</a>
+            <a href="contact.html">ติดต่อเรา</a>
+        </nav>
+        
+    </header>
+    <center>
+            <div class="main-container">
+            <i><div class="main-a">COMPUTER SCIENCE & INFORMATION TECHNOLOGY</div></i>
+            <i><div class="main-b">วิทยาการคอมพิวเตอร์เเละเทคโนโลยีสารสนเทศ</div></i>
+            <hr>
+    
+    <main>
+        <section>
+            <u><h3>ปรัชญาของหลักสูตร</h3></u>
+            <p>หลักสูตรวิทยาศาสตรบัณฑิต สาขาวิชาวิทยาการคอมพิวเตอร์มุ่งเน้นให้บัณฑิตมีความรู้เชิงทฤษฎี ความสามารถเชิงปฏิบัติ และ จริยธรรมในวิชาชีพ</p>
+        </section>   
+         <section> 
+            <u><h3>เรียนเกี่ยวกับอะไรบ้าง</h3></u>
+            <p>เรียนเกี่ยวกับทฤษฎีการคำนวณสำหรับคอมพิวเตอร์ ทฤษฎีการประมวลผลสารสนเทศ ทั้งด้านซอฟต์แวร์ ฮาร์ดแวร์ และเครือข่าย
+            ซึ่งประกอบด้วยหลายหัวข้อที่เกี่ยวข้องกับคอมพิวเตอร์ เช่น การวิเคราะห์และสังเคราะห์ขั้นตอนวิธี ทฤษฎีภาษาโปรแกรม ทฤษฎีการพัฒนาซอฟต์แวร์
+            ทฤษฎีฮาร์ดแวร์คอมพิวเตอร์ และทฤษฎีเครือข่าย</p>
+        </section>
+        <section>
+            <u><h3>คุณลักษณะบัณฑิตที่พึงประสงค์</h3></u>
+            <ol>
+                <li>มีความรู้เชิงทฤษฎีทางวิทยาการคอมพิวเตอร์ และความสามารถเชิงปฏิบัติ โดยมีความรู้ทางคณิตศาสตร์อย่างเพียงพอที่จะสามารถพัฒนางานทางด้านคอมพิวเตอร์ได้อย่างมีประสิทธิภาพ และ/หรือศึกษาต่อในระดับสูงขึ้นไป</li>
+                <li>เป็นผู้ใฝ่รู้และแสวงหาความรู้ด้วยตนเองอย่างต่อเนื่อง มีความคิดริเริ่มสร้างสรรค์ มีทักษะในการสื่อสาร การจัดการ และสามารถทำงานเป็นกลุ่ม</li>
+                <li>มีความรอบรู้ด้านวิทยาศาสตร์พื้นฐานและคณิตศาสตร์ สามารถวิเคราะห์และแก้ปัญหาด้วยวิธีการทางวิทยาศาสตร์ และมีศักยภาพในการค้นคว้า ติดตามความเจริญก้าวหน้าทางวิชาการระดับสากล</li>
+                <li>มีศักยภาพในการทำงานสายวิชาชีพและงานวิจัย</li>
+                <li>มีจรรยาบรรณในการประกอบวิชาชีพ รวมถึงการปฏิบัติตนตามกฎหมายเทคโนโลยีสารสนเทศ</li>
+                <li>มีคุณธรรม จริยธรรมและความรับผิดชอบต่อสังคม</li>
+            </ol>
+        </section>
+        <section>
+            <u><h3>อาชีพในอนาคต</h3></u>
+            <ul>
+                <li>นักพัฒนาระบบงานสารสนเทศเชิงบูรณาการ (Web App. Developer, Mobile Dev.)</li>
+                <li>นักทดสอบระบบงาน (Tester)</li>
+                <li>นักวิเคราะห์ข้อมูล (Data Analyst)</li>
+                <li>นักพัฒนาด้าน Internet of Things (IoT Dev.)</li>
+                <li>นักวิเคราะห์และออกแบบระบบงาน (Junior System Analyst)</li>
+                <li>นักวิทยาศาสตร์ข้อมูล (Computer and Information Research Scientists)</li>
+                <li>นักพัฒนาเว็บไซต์ (Web Developer)</li>
+            </ul>
+        </section>
+    </main>
+    </center>
+    
+    <footer>
+        <p>Copyright © มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>RMUTK CS-IT</title>
+
+    <style>
+       nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 15px 10px;
+            gap: 30px;
+            border-radius: 50px;
+            background-color: white;
+            position: relative;
+            width: 100%;
+            max-width: 500px; /* กำหนดความกว้างสูงสุดของ nav */
+            margin: 20px auto; /* จัดกึ่งกลางทั้งแนวนอนและแนวตั้ง */
+        }
+        nav a {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            position: relative;
+            color:black;
+        }
+        nav a::after {
+            content:'';
+            position: absolute;
+            width: 0%;
+            height: 8px;
+            opacity: 1;
+            background-image: linear-gradient(to right,#7EAA92,#C8E4B2) ;
+            bottom: -7px;
+            left:50%;
+            transform: translateX(-50%);
+            border-radius: 25px;
+            transition: .4s;
+        }
+        nav a:hover::after {
+            width: 50px;
+            opacity: 1;
+        }
+        body {
+            background-color: #7EAA92;
+        }
+        p {
+            padding: 0;
+            margin: 1%;
+            font-size: 19px;
+            text-align: left;
+        }
+        img {
+            width: 150px;
+            border-radius: 250px;
+        }
+        li {
+            font-size: 15px;
+        }
+        .features {
+            padding: 0;
+            margin: 1%;
+            text-align: left;
+        }
+        .frame {
+            margin: 20px;
+            width: 100%;
+            flex: 1;
+            max-width: 700px;
+            padding: 20px;
+            border-radius: 50px;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        .utk img {
+            position: absolute;
+            width: 100%;
+            max-height: 400px;
+            top: 0px;
+            transform: translateX(-50%);
+            object-fit: 100%;
+            border-radius: 0%;
+            
+        }
+        header {
+            text-align: center; 
+            padding-bottom: 300px;
+        }
+        @media screen and (min-width: 414px) and(max-width:1250) {
+            nav {
+            display: block; /* แสดง navigation items เป็นบล็อกแทนคอลัมน์ */
+            width: 100%; /* กำหนดความกว้างเป็น 100% เพื่อให้พอดีกับหน้าจอ */
+            padding: 10px 0; /* ปรับขอบเขตระยะห่างของ navigation items */
+            text-align: center; /* จัดกลางเนื้อหา */
+            }
+            nav a {
+            width: auto; /* ให้ navigation items ความกว้างตามข้อความ */
+            margin: 5px 0; /* ปรับระยะห่างระหว่าง navigation items */
+            }
+            header {
+                padding-bottom: 180px; /* Adjusted padding for smaller screens */
+            }
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- ส่วนหัวของเว็บไซต์ -->
+    <header>
+        <div class="img utk"><img src="./img/utk/UTK.jpg" alt="มหาวิทยาลัย" width="100"></div>
+        <nav>
+            <a href="index.html">หน้าหลัก</a>
+            <a href="study.html">แผนการเรียน</a>
+            <a href="lecturers.html">บุคลากร</a>
+            <a href="contact.html">ติดต่อเรา</a>
+        </nav>
+    </header>
+    <center>
+    <div class="main-c"><i><h2>คณาอาจารย์</h2></i></div>
+    
+        <div class="frame"> 
+            <div class="img"><img src="./img/piya.jpg"/></div>
+            <div class="name"><h3>ดร.ปิยะ ถิรพันธุ์เมธี (Piya Thirapanmethee, Ph.D.)</h3></div>
+            <ul class="features">
+                <hr><center><h4>คุณวุฒิ</h4></center>
+                <li>ปร.ด.(เทคโนโลยีสารสนเทศและการสื่อสารเพื่อการศึกษา) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+                    <br>Ph.D. (Information and Communication Technology for Education) King Mongkut's University of Technology North Bangkok</li>
+                <li> วท.ม. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                    <br>M.Sc. (Information Technology) King Mongkut's University of Technology Thonburi</li>
+                <li> อส.บ. (เทคโนโลยีอิเล็กทรอนิกส์) สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร ลาดกระบัง
+                    <br>B.Ind.Tech. (Electronics) King Mongkut's Institute of Technology Ladkrabang</li>
+                <hr><center><h4>ประสบการณ์สอน</h4></center>
+                    <li> โครงสร้างข้อมูล (Data Structure)</li>
+                    <li> เครือข่ายคอมพิวเตอร์ (Computer Network)</li>
+                    <li> ระบบปฏิบัติการ (Operating System)</li>
+                    <li> วิศวกรรมซอฟต์แวร์ (Software Engineering)</li>
+                    <li> ความมั่นคงของระบบสารสนเทศ (Information System Security)</li>
+                    <li> การจัดระเบียบคอมพิวเตอร์และสถาปัตยกรรม(Computer Organization and Architecture)</li>
+                    <li> ดิจิทัลอิเล็กทรอนิกส์ (Digital Electronics)</li>
+                    <li> การประมวลสัญญาณดิจิตอล (Digital Signal Processing)</li>
+                    <li> การจัดการองค์กรและระบบสารสนเทศ (Management Information System in Organization)</li>
+            </ul>
+        </div>
+    
+            <div class="frame"> 
+                <div class="img"><img src="./img/Srisuda.jpg"/></div>
+                <div class="name"><h3>นางศรีสุดา สรนันต์ศรี (Mrs. Srisuda Soranunsri)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>ค.อ.ม. (คอมพิวเตอร์และเทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                        <br>M.S.Tech.Ed.(Computer and Information Technology) King Mongkut's University of Technology Thonburi
+                        King Mongkut's University of Technology North Bangkok</li>
+                    <li> วท.บ. (ศาสตร์คอมพิวเตอร์) มหาวิทยาลัยรามคำแหง
+                        <br>B.Sc. (Computer Science) Ramkhamhaeng University</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> หลักการเขียนโปรแกรมคอมพิวเตอร์ (Principle of Computer Programming)</li>
+                        <li> ระบบฐานข้อมูล (Database System)</li>
+                        <li> ระบบจัดการฐานข้อมูล (Database Management System)</li>
+                        <li> ระเบียบวิธีการเขียนโปรแกรม (Programming Methodology)</li>
+                        <li> การวิเคราะห์และออกแบบระบบ (System Analysis and Design)</li>
+                        <li> วิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศเบื้องต้น (Introduction to Computer Science and Information Technology)</li>
+                </ul>
+            </div>
+            
+            <div class="frame"> 
+                <div class="img"><img src="./img/chanwit.jpg"/></div>
+                <div class="name"><h3>นายชาญวิทย์ มุสิกะ (Mr. Chanwit Musika)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>วท.ม. (เทคโนโลยีอินเทอร์เน็ตและสารสนเทศ) มหาวิทยาลัยนเรศวร
+                        <br>M.Sc. (Internet and Information Technology) Naresuan University</li>
+                    <li> ค.อ.บ. (วิศวกรรมคอมพิวเตอร์) สถาบันเทคโนโลยีราชมงคล
+                        <br>B.S.Tech.Ed. (Computer Engineering) Rajamangala Institute of Technology</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> ไมโครคอนโทรลเลอร์ (Microcontroller)</li>
+                        <li> ระบบฝังตัว (Embedded System)</li>
+                        <li> การศึกษาเฉพาะเรื่องทางวิทยาการคอมพิวเตอร์ (Selected Topic in Computer Science)</li>
+                        <li> ระบบไมโครคอมพิวเตอร์และการต่อประสาน (Microcomputer System and Interfacing)</li>
+                        <li> เทคโนโลยีและการประยุกต์ใช้อินเทอร์เน็ต (Internet Technology and Applications)</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/Thawadchai.jpg"/></div>
+                <div class="name"><h3>ดร.ธวัชชัย สารวงษ์ (Thawatchai Sarawong, Ph.D.)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>ปร.ด. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+                        <br>Ph.D. (Information Technology) King Mongkut's University of Technology North Bangkok</li>
+                    <li> ค.อ.ม. (เทคโนโลยีคอมพิวเตอร์) สถาบันเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+                        <br>M.S.Tech.Ed. (Computer Technology) King Mongkut’s Institute of Technology North Bangkok</li>
+                        <li>ค.อ.บ. (วิศวกรรมคอมพิวเตอร์) สถาบันเทคโนโลยีราชมงคล
+                            <br>B.S.Tech.Ed. (Computer Engineering) Rajamangala Institute of Technology</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> การประมวลผลแฟ้มข้อมูล (File Processing)</li>
+                        <li> ระบบปฏิบัติการ (Operating System)</li>
+                        <li> หลักการเขียนโปรแกรมคอมพิวเตอร์ (Principle of Computer Programming)</li>
+                </ul>
+            </div>
+            <div class="frame"> 
+                <div class="img"><img src="./img/Kulchaya.png"/></div>
+                <div class="name"><h3>นางกุลชยา พงษ์แสวง (Mrs. Kulchaya Pongsawaeng)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>กศ.ม. (ธุรกิจศึกษา) มหาวิทยาลัยศรีนครินทรวิโรฒ ประสานมิตร
+                        <br>M.Ed. (Business Education) Srinakharinwirot University</li>
+                    <li> บธ.บ. (การจัดการทั่วไป) มหาวิทยาลัยสุโขทัยธรรมาธิราช
+                        <br>B.B.A. (General Management) Sukhothai Thammathirat Open University</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> คอมพิวเตอร์พื้นฐาน (Fundamental of Computer)</li>
+                        <li> โปรแกรมสำเร็จรูป</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/Noppharat.jpg"/></div>
+                <div class="name"><h3>ผู้ช่วยศาสตราจารย์นพรัตน์ ภัยวิมุติ (Asst. Prof. Nopparat Paivimut)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>ศษ.ม. (เทคโนโลยีและสื่อสารการศึกษา) มหาวิทยาลัยสุโขทัยธรรมาธิราช
+                        <br>M.Ed (Educational Technology and Communication) Sukhothai Thammathirat Open University</li>
+                    <li>บธ.บ. (คอมพิวเตอร์ธุรกิจ) มหาวิทยาลัยสยาม
+                        <br>B.B.A (Business Computer) Siam University</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> การเขียนโปรแกรมคอมพิวเตอร์เบื้องต้น</li>
+                        <li> โปรแกรมสำเร็จรูป</li>
+                        <li> ระบบฐานข้อมูลเบื้องต้น</li>
+                        <li> คอมพิวเตอร์พื้นฐาน (Fundamental of Computer)</li>
+                        <li> คอมพิวเตอร์เบื้องต้นและภาษาเบสิก</li>
+                        <li> การโปรแกรมคอมพิวเตอร์เบื้องต้น(ภาษาเทอร์โบปาสคาล)</li>
+                        <li> การโปรแกรมคอมพิวเตอร์เบื้องต้น(ภาษาซี)</li>
+                        <li> การโปรแกรมคอมพิวเตอร์เบื้องต้น(ภาษาวิชวลเบสิก)</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/Sureeporn-2.png"/></div>
+                <div class="name"><h3>นางสาวสุรีพร นวลนิ่ม (Ms. Sureeporn Nualnim)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>ค.อ.ม. (เทคโนโลยีคอมพิวเตอร์) สถาบันเทคโนโลยีพระจอมเกล้าพระนครเหนือ
+                        <br>M.S.Tech.Ed. (Computer Technology) King Mongkut’s Institute of Technology North Bangkok</li>
+                    <li>ค.อ.บ. (วิศวกรรมคอมพิวเตอร์) สถาบันเทคโนโลยีราชมงคล
+                        <br>B.S.Tech.Ed. (Computer Engineering) Rajamangala Institute of Technology</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> วิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศเบื้องต้น (Introduction to Computer Science and Information Technology)</li>
+                        <li> คอมพิวเตอร์กราฟิก (Computer Graphics)</li>
+                        <li> การปฏิสัมพันธ์ระหว่างมนุษย์กับคอมพิวเตอร์ (Human-Computer Interaction)</li>
+                        <li> เทคโนโลยีและการประยุกต์ใช้อินเทอร์เน็ต (Internet Technology and Applications)</li>
+                        <li> การออกแบบเว็บไซต์ (Website Design)</li>
+                        <li> อัลกอริทึมส์ (Algorithms)</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/Chananate.jpg"/></div>
+                <div class="name"><h3>นางสาวชนาเนตร อรรถยุกติ (Ms. Chananate Arthayukti)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>วท.ม. (วิทยาศาสตร์คอมพิวเตอร์) จุฬาลงกรณ์มหาวิทยาลัย
+                        <br>M.Sc. (Computer Science) Chulalongkorn University</li>
+                    <li>บธ.บ. (ระบบสารสนเทศ) สถาบันเทคโนโลยีราชมงคล
+                        <br>B.B.A. (Information System) Rajamangala Institute of Technology</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> การเขียนโปรแกรมเชิงวัตถุ (Object-Oriented Programming)</li>
+                        <li> การวิเคราะห์และออกแบบเชิงวัตถุ (Object-Oriented Analysis and Design)</li>
+                        <li> การเขียนโปรแกรมบนเว็บ (Web Programming)</li>
+                        <li> การโปรแกรมคอมพิวเตอร์ขั้นสูง (Advanced Programming)</li>
+                        <li> วิศวกรรมซอฟต์แวร์ (Software Engineering)</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/Sathira.jpg"/></div>
+                <div class="name"><h3>นายสถิระ ชัยชนะกลาง (Mr. Satira Chaichanaklang)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>วท.ม. (การศึกษาวิทยาศาสตร์-คอมพิวเตอร์) สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร ลาดกระบัง
+                        <br>M.Sc. (Science Education (Computer)) King Mongkut's Institute of Technology Ladkrabang</li>
+                    <li>ค.อ.บ. (อิเล็กทรอนิกส์และคอมพิวเตอร์) สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหาร ลาดกระบัง
+                        <br>B.S.Tech.Ed. (Electronics and Computer) King Mongkut's Institute of Technology Ladkrabang</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> การจัดระเบียบคอมพิวเตอร์และสถาปัตยกรรม (Computer Organization and Architecture)</li>
+                        <li> ดิจิทัลอิเล็กทรอนิกส์ (Digital Electronics)</li>
+                        <li> ระบบมัลติมีเดียและการประยุกต์ใช้ (Multimedia System and Applications)</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/Chadchai.jpg"/></div>
+                <div class="name"><h3>นายฉัตรชัย รักถิ่น</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>M.S. (Information System), Ney Jersey Institute of Technology, NJ, U.S.A.
+                    
+                    <li>M.S. (Telecommunication and Network Management), Syracuse University, U.S.A.
+                    <li>B.Sc. (Information Technology) มหาวิทยาลัยอัสสัมชัญ
+                     <br>B.Sc. (Information Technology) Assumption University of Thailand</li>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/orasa.jpg"/></div>
+                <div class="name"><h3>ผู้ช่วยศาสตราจารย์.ดร.อรสา พัสดุ (Asst. Prof. Orasa Patsadu, Ph.D.)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>ปร.ด. วิทยาการคอมพิวเตอร์ (หลักสูตรภาษาอังกฤษ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                        <br>Ph.D. Computer Science (English Program) King Mongkut's University of Technology Thonburi</li>
+                    <li>วท.ม. (วิศวกรรมซอฟต์แวร์) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                        <br>M.Sc. (Software Engineering) King Mongkut's University of Technology Thonburi</li>
+                    <li>บธ.บ. (ระบบสารสนเทศ) มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ
+                        <br>B.B.A. (Information System) Rajamangala University of Technology Krungthep</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li>  Data Science</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/monrada.jpg"/></div>
+                <div class="name"><h3>นางสาวมนรดา ศิริมงคล (Ms. Monrada Sirimongkol)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>วท.ม. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                        <br>M.Sc. (Information Technology) King Mongkut's University of Technology Thonburi</li>
+                    <li>วท.บ. (วิทยาการคอมพิวเตอร์) มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ
+                        <br>B.Sc. (Computer Science) Rajamangala University of Technology Krungthep</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> การพัฒนารูปแบบสื่อออนไลน์ (Online Media Development)</li>
+                        <li> คอมพิวเตอร์พื้นฐาน (Fundamental of Computer)</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/nilubol.jpg"/></div>
+                <div class="name"><h3>นางสาวนิลุบล บุตรไชย (Ms. Nilubon Bootchai)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>M.S. (Computer Science), Syracuse University, U.S.A.</li>
+                    <li>B.S. (Computer Science), Syracuse University, U.S.A.</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> ผู้ช่วยนักวิเคราะห์ข้อมูลความปลอดภัย</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/sirion.jpg"/></div>
+                <div class="name"><h3>นางสาวสิริอร นุชผดุง (Ms. Sirion Nutphadung)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>วท.ม. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                        <br>M.Sc. (Information Technology) King Mongkut's University of Technology Thonburi</li>
+                    <li>วท.บ. (วิทยาการคอมพิวเตอร์) มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ
+                        <br>B.Sc. (Computer Science) Rajamangala University of Technology Krungthep</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> อินเทอร์เน็ตในชีวิตประจำวัน (Internets for Everyday Life)</li>
+                        <li> เครือข่ายอินเทอร์เน็ต (Internetworking)</li>
+                        <li> เทคโนโลยีและการประยุกต์ใช้อินเทอร์เน็ต (Internet Technology and Applications)</li>
+                        <li> การออกแบบเว็บไซต์ (Website Design)</li>
+                        <li> คอมพิวเตอร์พื้นฐาน (Fundamental of Computer)</li>
+                </ul>
+            </div>
+
+            <div class="frame"> 
+                <div class="img"><img src="./img/Supharoek.png"/></div>
+                <div class="name"><h3>นายศุภฤกษ์ ฉัตรธนโชติ (Mr. Supharoek Chattanachot)</h3></div>
+                <ul class="features">
+                    <center><h4>คุณวุฒิ</h4></center>
+                    <li>วท.ม. (เทคโนโลยีสารสนเทศ) มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี
+                        <br>M.Sc. (Information Technology) King Mongkut’s University of Technology Thonburi</li>
+                    <li>วท.บ. (วิทยาการคอมพิวเตอร์) มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ
+                        <br>B.Sc. (Computer Science) Rajamangala University of Technology Krungthep</li>
+                    <hr><center><h4>ประสบการณ์สอน</h4></center>
+                        <li> Artificial Intelligence</li>
+                        <li> Programming</li>
+                </ul>
+            </div>
+        </center>
+        <footer>
+            <p>Copyright © มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ. All rights reserved.</p>
+        </footer>
+</body>
+</html>

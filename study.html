@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>RMUTK CS-IT</title>
+
+    <style>
+      nav {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+            padding: 15px 10px;
+            gap: 30px;
+            border-radius: 50px;
+            background-color: white;
+            position: relative;
+            width: 100%;
+            max-width: 500px; /* กำหนดความกว้างสูงสุดของ nav */
+            margin: 20px auto; /* จัดกึ่งกลางทั้งแนวนอนและแนวตั้ง */
+        }
+        nav a {
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            position: relative;
+            color:black;
+            
+        }
+        nav a::after {
+            content:'';
+            position: absolute;
+            width: 0%;
+            height: 8px;
+            opacity: 1;
+            background-image: linear-gradient(to right,#7EAA92,#C8E4B2) ;
+            bottom: -7px;
+            left:50%;
+            transform: translateX(-50%);
+            border-radius: 25px;
+            transition: .4s;
+        }
+        nav a:hover::after {
+            width: 50px;
+            opacity: 1;
+        }
+        body {
+            background-color: #7EAA92;
+        }
+        p {
+            padding: 0;
+            margin: 1%;
+            font-size: 19px;
+            text-align: left;
+        }
+        .header-img img {
+            position: absolute;
+            width: 100%;
+            max-height: 400px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            object-fit: cover;
+        }
+        header {
+ 
+            text-align: center; 
+            padding-bottom: 350px; 
+        }
+        * {
+            margin: 0 ;
+            box-sizing: border-box;
+        }
+        .container {
+            margin: 0 auto;
+            padding: 0;
+            max-width: 75%;
+            background-color: aliceblue;
+        }
+        .grid-area {
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            
+        }
+        .grid-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #ccc;
+            padding: 20px;
+        }
+        .grid-img img {
+            width: 100%;
+        }
+        @media screen and (min-width: 414px) and (max-width:1250)  {
+            nav {
+            display: block; /* แสดง navigation items เป็นบล็อกแทนคอลัมน์ */
+            width: 100%; /* กำหนดความกว้างเป็น 100% เพื่อให้พอดีกับหน้าจอ */
+            padding: 10px 0; /* ปรับขอบเขตระยะห่างของ navigation items */
+            text-align: center; /* จัดกลางเนื้อหา */
+            }
+            nav a {
+            width: auto; /* ให้ navigation items ความกว้างตามข้อความ */
+            margin: 5px 0; /* ปรับระยะห่างระหว่าง navigation items */
+            }
+            header {
+                padding-bottom: 180px; /* Adjusted padding for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-img">
+        <img src="./img/utk/UTK.jpg" alt="มหาวิทยาลัย" width="100">
+        </div>
+        <nav>
+            <a href="index.html">หน้าหลัก</a>
+            <a href="study.html">เเผนการเรียน</a>
+            <a href="lecturers.html">บุคลากร</a>
+            <a href="contact.html">ติดต่อเรา</a>
+        </nav>
+    </header>
+    <center>
+        <main>
+            <section>
+                
+                <i><h2>เเผนการเรียน</h2></i>
+                <div class="container">
+                    <div class="grid-area">
+                        <div class="grid-item">
+                            
+                            <div class="grid-img">
+                                <img src="./plan/cs66.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/Cs66.html" class="plan-img">
+                                    <button>รหัส 66 CS</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            
+                            <div class="grid-img">
+                                <img src="./plan/it66.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/It66.html" class="plan-img">
+                                    <button>รหัส 66 IT</button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <div class="grid-img">
+                                <img src="./plan/cs65.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/Cs65.html" class="plan-img">
+                                    <button>รหัส 65 CS</button>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item">
+                            <div class="grid-img">
+                                <img src="./plan/it65.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/It65.html" class="plan-img">
+                                    <button>รหัส 65 IT</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="grid-img">
+                                <img src="./plan/cs64.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/Cs64.html" class="plan-img">
+                                    <button>รหัส 64 CS</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-img">
+                                <img src="./plan/it64.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/It64.html" class="plan-img">
+                                    <button>รหัส 64 IT</button>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="grid-item">
+                            <div class="grid-img">
+                                <img src="./plan/cs63.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/Cs63.html" class="plan-img">
+                                    <button>รหัส 63 CS</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-img">
+                                <img src="./plan/it63.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/It63.html" class="plan-img">
+                                    <button>รหัส 63 IT</button>
+                                </a>
+                            </div>
+                        </div>
+                       
+                        <div class="grid-item">
+                            <div class="grid-img">
+                                <img src="./plan/cs62.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/Cs62.html" class="plan-img">
+                                    <button>รหัส 62 CS</button>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="grid-img">
+                                <img src="./plan/it62.jpg">
+                            </div>  
+                            <div>
+                                <a href="./plan/It62.html" class="plan-img">
+                                    <button>รหัส 62 IT</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </section>
+        </main>
+    </center>
+    <footer>
+        <p>Copyright © มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ. All rights reserved.</p>
+    </footer>
+</body>
+</html>
